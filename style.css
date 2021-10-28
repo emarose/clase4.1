@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+}
+
+:root{
+  --dark-blue-clr: rgb(20,30,90);
+  --gray-clr: #81879d;
+  --bright-blue: #372ae0;
+}
+
+body{
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card{
+  margin: 100px auto;
+  width: 450px;
+  height: 650px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.heroImg{
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.card h2{
+  font-size: 30px;
+  margin-top: 30px; 
+  color: var(--dark-blue-clr);
+  font-weight: bolder;
+}
+
+.cardDesc{
+  color:var(--gray-clr);
+  font-size:0.9rem;
+  margin: 25px auto;
+  line-height: 1.6;
+  max-width: 36ch;
+}
+
+.plan{
+  position: relative;
+  width: 80%;
+  margin: 40px auto;
+}
+.plan img{
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.plan a{
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  color: var(--bright-blue);
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.planText{
+  color: var(--dark-blue-clr);
+  margin: 15px auto;
+  transform: translateX(-30px);
+}
+
+.planText h4{
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+button{
+  margin-bottom: 30px;
+  border: 1px solid var(--dark-blue-clr);
+  padding: 13px 90px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: var(--bright-blue);
+  box-shadow: 0 5px 10px 5px rgba(20,20,80,.3);
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: var(--dark-blue-clr);
+}
+
+.cancelOrder{
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--dark-blue-clr)
+}
