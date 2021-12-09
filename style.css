@@ -29,6 +29,9 @@ body{
   border: 1px solid black;
   border-radius: 30px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heroImg{
@@ -52,20 +55,15 @@ body{
 }
 
 .plan{
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 80%;
-  margin: 40px auto;
-}
-.plan img{
-  position: absolute;
-  top: 0;
-  left: 30px;
+ 
 }
 
 .plan a{
-  position: absolute;
-  right: 10px;
-  top: 8px;
+
   color: var(--bright-blue);
   font-weight: bolder;
   font-size: 1rem;
